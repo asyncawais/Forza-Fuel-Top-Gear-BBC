@@ -1,0 +1,1373 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+        outline: none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+        background-color: black;
+        font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+        letter-spacing: 0;
+        /*font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;*/
+        overflow-x: hidden;
+}
+html, body {
+  height: 100%;
+  margin: 0 0 1px;
+  padding: 0;
+}
+p {
+    line-height: 1.5em;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1000px;
+    height: 90px;
+    position: fixed;
+    z-index: 10;
+}
+
+header .pointer {
+    margin: 0 auto;
+    width: 35px;
+    height: 17px;
+    background-image: url('../img/nav-pointer.png');
+}
+
+.sections-wrapper {
+    position: relative;
+    height: 1080px;
+    overflow: hidden;
+}
+
+section {
+    width: 100%;
+    position: absolute;
+}
+
+/*
+#screen-1 { z-index: 1; }
+#screen-2 { z-index: 2; }
+#screen-3 { z-index: 3; }
+#screen-4 { z-index: 4; }
+*/
+
+section .inner {
+    position: relative;
+}
+
+section .option {
+    float: left;
+}
+
+.select-arrows {
+    position: absolute;
+    
+    z-index: 9;
+    
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+p.main-text {
+    text-align: center;
+}
+
+.options-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+    .options, .option {
+        position: relative;
+        
+    }
+    
+    .option img {
+        width: 100%;
+    }
+    
+    
+
+
+/*--------------------------------------------------
+    Carousel - Thumbnails
+--------------------------------------------------*/
+
+.thumbnails-wrapper {
+    height: 144px;
+    width: 100%;
+    background-color: black;
+    bottom: 50px;
+    position: absolute;
+}
+    
+.thumbnails-wrapper .pointer {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+    
+.thumbnails-wrapper .carousel-wrapper {
+    width: 905px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: -15px;
+}
+    
+ul.thumbnails {
+    width: 9999px;
+    position: relative;
+}
+    
+.thumbnail {
+    width: 173px;
+    height: 124px;
+    float: left;
+    margin-right: 10px;
+    opacity: 0.6;
+    overflow: hidden;
+}
+    
+.thumbnail .bleeding-text {
+    display: none;
+}
+    
+.thumbnail.highlight {
+    opacity: 1;
+}
+
+.thumbnail.highlight .bleeding-text {
+    display: block;
+}
+
+.thumbnail.last {
+    margin-right: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/*
+    Continue Button
+*/
+
+.continue-wrapper {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 25px;
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+.continue-wrapper .label {
+    color: white;
+    height: 30px;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+    .continue {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+h1 .small {
+    font-size: 48px;
+}
+
+h1 .large {
+    font-size: 112.5px;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+/*-----------
+    Top Navigation
+------*/
+
+nav {
+    width: 100%;
+    height: 70px;    
+    margin: 0 auto;
+    z-index: 10;
+    background-color: black;
+    border-bottom: 1px solid #ec008a;
+    background-image: url('../img/nav-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+    nav .inner {
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    nav .ff-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 275px;
+    }
+        
+    nav .ff-preorder {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 205px;
+    }
+    
+        nav .ff-logo img, nav .ff-preorder img {
+                width: 100%;
+        }
+        
+    nav .title a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+.user-progress {
+    width: 207px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.user-progress .title {
+    font-size: 22px;
+    text-align: center;
+    position: relative;
+    top: 7px;
+    
+}
+
+.user-progress ul {
+    position: relative;
+    width: 175px;
+    margin: 0 auto;
+    top: 7px;
+}
+
+.user-progress ul li {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    background-image: url('../img/user-progress.jpg');
+}
+
+.user-progress ul li.on {
+    background-image: url('../img/user-progress-on-1.jpg');  
+}
+
+.user-progress ul li.last {
+    margin-right: 0;
+}
+
+.user-progress ul li a {
+        display: block;
+        width: 36px;
+        height: 35px;
+        cursor: default;
+}
+
+.user-progress ul li.on a {
+    cursor: pointer;   
+}
+
+#user-progress-2 {
+    background-position: 0 0;
+}
+
+#user-progress-3 {
+    background-position: -40px 0px;
+}
+
+#user-progress-4 {
+    background-position: -236px 0px;
+}
+
+#user-progress-5 {
+    background-position: -120px 0px;
+}
+
+
+.main-left-gradient, .main-right-gradient {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 1080px;
+    background: gray;
+    z-index: 10;
+    opacity: 1;
+}
+
+.main-left-gradient {
+    left: 0;
+    opacity: 0.5;
+    background: -webkit-linear-gradient(left, black , transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, black, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, black, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, black , transparent); /* Standard syntax (must be last) */
+    display: none;
+}
+
+.main-right-gradient {
+    right: 0;
+    opacity: 0.5;
+    background: -webkit-linear-gradient(right, black , transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, black, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, black, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, black , transparent); /* Standard syntax (must be last) */
+    display: none;
+}
+
+section.home {
+    background-size: 100%;
+}
+
+/*--------------------------------------------------
+    SECTION - Home
+--------------------------------------------------*/
+
+section.home {
+    background-color: black;
+    /*background-image: url('../img/section-home-bg.jpg');*/
+    background-image: url('../img/main2.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top: 70px;
+}
+
+section.home h1 .large {
+    font-size: 155px;
+}
+
+section.home .main-heading-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 175px;
+    top: 65px;
+    z-index: 1;
+}
+
+section.home .main-text-wrapper {
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 235px;
+}
+
+section.home .main-text-wrapper p {
+    width: 900px;
+    margin: 25px auto 0;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.5em;
+    text-transform: none;
+}
+
+section.home .continue-wrapper {
+    position: absolute;
+    bottom: 0;
+}
+
+section.home.allow-fixed .continue-wrapper {
+    position: fixed;
+}
+
+section.home .mask {
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+}
+
+section.home .logo-mask {
+    width: 100%;
+    opacity: 0.4;
+}
+
+section.home .logo-mask img {
+    width: 100%;
+    position: fixed;
+    top: -210px;
+}
+
+/*--------------------------------------------------
+    SECTION - Location
+--------------------------------------------------*/
+
+section.location {
+    background-color: black;
+}
+
+section.location .main-heading-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 175px;
+    top: 40px;
+    z-index: 2;
+}
+
+section.location .options-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto 85px;
+}
+
+section.location.allow-fixed .options-wrapper {
+    position: fixed;
+    top: 70px;
+}
+
+section.location .options-wrapper > .inner {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section.location .options-wrapper .mask {
+    width: 100%;
+    background-color: black;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+section.location li.option {
+    width: 1920px;
+    overflow: hidden;
+}
+
+section.location .thumbnails-wrapper {
+    position: absolute;
+    top: 425px;
+    width: 100%;
+    height: 159px;
+    background-color: #ebebeb;
+    box-shadow: 0 15px 25px #1d1d1d, 0 0 0 #1d1d1d;
+    z-index: 1;
+}
+
+
+section.location .thumbnails-wrapper .carousel-wrapper {
+    width: 1000px;
+    top: -10px;
+}
+
+section.location .thumbnails-wrapper ul li {
+    opacity: 0.7;
+    border: 2px solid #ebebeb;
+    height: 130px;
+    width: 187px;
+    margin-right: 11px;
+    background: pink;
+    
+    -webkit-animation: fadeOutLocThumb 0.2s ease-in-out; 
+    -moz-animation:    fadeOutLocThumb 0.2s ease-in-out;
+    -o-animation:      fadeOutLocThumb 0.2s ease-in-out;
+    animation:         fadeOutLocThumb 0.2s ease-in-out;
+    
+}
+
+section.location .thumbnails-wrapper ul li.highlight {
+    opacity: 1;
+    border: 2px solid #ed008c;
+}
+
+    section.location .thumbnails-wrapper ul li img {
+        width: 100%;
+    }
+
+section.location .thumbnails-wrapper .pointer {
+    background-image: url('../img/thumb-pointer-white.png');
+    width: 45px;
+    height: 23px;
+    top: 124px;
+}
+
+section.location .text-overlay-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 140px;
+    height: 15px;
+    text-align: center;
+    font-size: 18px;
+    z-index: 1;
+}
+
+section.location .text-overlay-wrapper .title, section.location .text-overlay-wrapper p {
+    line-height: 1.3em;
+}
+
+section.location .text-overlay-wrapper.second {
+    opacity: 0;   
+}
+
+section.location.allow-fixed .text-overlay-wrapper.second {
+    position: fixed;
+    opacity: 1;
+    -webkit-animation: show 0.2s ease-in-out; 
+    -moz-animation:    show 0.2s ease-in-out;
+    -o-animation:      show 0.2s ease-in-out;
+    animation:         show 0.2s ease-in-out;
+}
+
+section.location .text-overlay-wrapper.first {
+    top: 210px;
+    bottom: auto;
+    height: 72px;
+}
+
+/*section.location.allow-fixed .text-overlay-wrapper.second {
+    position: fixed;
+    z-index: 2;
+}*/
+
+section.location .text-overlay-wrapper ul {
+    height: 70px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 340px;
+}
+
+section.location .text-overlay-wrapper ul li {
+    width: 100%;
+}
+
+section.location .select-arrows-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    top: 210px;
+}
+
+section.location .select-arrows-wrapper .inner {
+    margin: 0 auto;
+    width: 1000px;
+    height: 70px;
+}
+
+section.location .select-arrows.previous {
+    left: 0;
+}
+
+section.location .select-arrows.next {
+    right: 0;
+}
+
+section.location .continue-wrapper {
+    opacity: 0;
+    padding-top: 20px;
+}
+
+section.location.allow-fixed .continue-wrapper {
+    position: fixed;
+    z-index: 2;
+    opacity: 1;
+    background: -webkit-linear-gradient(transparent, black); 
+    background: -o-linear-gradient(transparent, black);
+    background: -moz-linear-gradient(transparent, black); 
+    background: linear-gradient(transparent, black);
+    -webkit-animation: show 0.2s ease-in-out; 
+    -moz-animation:    show 0.2s ease-in-out;
+    -o-animation:      show 0.2s ease-in-out;
+    animation:         show 0.2s ease-in-out;
+}
+
+/*---------------------------
+    SECTION - Cars
+---------------------------*/
+
+section.cars {
+    background-image: url('../img/section-cars-bg.jpg');
+    background-position: center center;
+    
+    background-attachment: fixed;
+}
+
+section.cars .select-arrows {
+    top: 10px;
+    background-color: black;
+}
+
+section.cars h2 {
+    color: white;
+    font-size: 45px;
+    position: relative;
+    top: 32px;
+}
+
+section.cars .main-heading-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 175px;
+    top: 40px;
+    z-index: 1;
+}
+
+section.cars .options-wrapper {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    top: 200px;
+    background-color: black;
+}
+
+section.cars .options-wrapper .inner {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section.cars li.option {
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+section.cars .thumbnails-wrapper .carousel-wrapper {
+    width: 1000px;
+    top: -10px;
+}
+
+section.cars .thumbnails-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 159px;
+    top: 670px;
+    bottom: 0;
+    background-color: #252525;
+    box-shadow: 0px 15px 25px #1d1d1d, 0px 0px 0px #1d1d1d;
+}
+
+section.cars .thumbnails-wrapper ul li {
+    
+    opacity: 0.8;
+    border: 2px solid #252525;
+    background-color: black;
+    
+    width: 187px;
+    height: 130px;
+    
+    -webkit-animation: fadeOut 0.2s ease-in-out; 
+    -moz-animation:    fadeOut 0.2s ease-in-out;
+    -o-animation:      fadeOut 0.2s ease-in-out;
+    animation:         fadeOut 0.2s ease-in-out;
+    
+}
+
+section.cars .thumbnails-wrapper ul li.highlight {
+    opacity: 1;
+    border: 2px solid #ed008c;
+    -webkit-animation: fadeIn 0.2s ease-in-out; 
+    -moz-animation:    fadeIn 0.2s ease-in-out; 
+    -o-animation:      fadeIn 0.2s ease-in-out; 
+    animation:         fadeIn 0.2s ease-in-out;
+}
+
+section.cars .thumbnails-wrapper .pointer {
+    background-image: url('../img/thumb-pointer-grey.png');
+    width: 45px;
+    height: 23px;
+    top: 124px;
+}
+
+section.cars a.previous {
+    box-shadow: 50px 0 50px 5px #000
+}
+
+section.cars a.next {
+    box-shadow: -50px 0 50px 5px #000
+}
+
+section.cars .specifcations-wrapper {
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    
+}
+
+section.cars table.specifications {
+    width: 264px;
+}
+
+section.cars .specifications .label {
+    width: 96px;
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 15px;
+    
+}
+
+section.cars .specifications .detail {
+    width: 153px;
+    
+    background-image: url('../img/spec-detail-bg.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    vertical-align: middle;
+}
+
+section.cars .specifications td {
+    padding-bottom: 13px;
+    height: 43px;
+    line-height: 46px;
+}
+
+section.cars .text-overlay-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 140px;
+    height: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*section.cars.allow-fixed .text-overlay-wrapper {
+    position: fixed;
+    z-index: 2;
+}*/
+
+section.cars .text-overlay-wrapper ul, section.cars .text-overlay-wrapper ul li {
+    width: 100%;
+}
+
+section.cars .continue-wrapper {
+    opacity: 0;
+    padding-top: 20px;
+}
+
+section.cars.allow-fixed .continue-wrapper {
+    position: fixed;
+    background: -webkit-linear-gradient(transparent, black); 
+    background: -o-linear-gradient(transparent, black);
+    background: -moz-linear-gradient(transparent, black); 
+    background: linear-gradient(transparent, black);
+    z-index: 2;
+    opacity: 1;
+    -webkit-animation: show 0.2s ease-in-out; 
+    -moz-animation:    show 0.2s ease-in-out;
+    -o-animation:      show 0.2s ease-in-out;
+    animation:         show 0.2s ease-in-out;
+}
+
+/*--------------------------------------------------
+    Section - Weather
+--------------------------------------------------*/
+
+section.weather {
+    background-color: black;      
+}
+
+section.weather .main-heading-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 175px;
+    top: 40px;
+    z-index: 1;
+}
+
+section.weather .options-wrapper {
+    width: 100%;
+}
+
+section.weather .options-wrapper .mask {
+    width: 100%;
+    background-color: black;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+section.weather .options-wrapper > .inner {
+    width: 1705px;
+    margin: 0;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0); 
+    -webkit-transform: translate(-50%, 0); 
+}
+
+section.weather .options-wrapper ul.options li {
+    width: 341px;
+    opacity: 0.8;
+    -webkit-animation: fadeOut 0.2s ease-in-out; 
+    -moz-animation:    fadeOut 0.2s ease-in-out;
+    -o-animation:      fadeOut 0.2s ease-in-out;
+    animation:         fadeOut 0.2s ease-in-out;
+}
+
+section.weather .options-wrapper ul.options li.highlight {
+    opacity: 1;
+    -webkit-animation: fadeIn 0.1ms ease-in-out; 
+    -moz-animation:    fadeIn 0.1ms ease-in-out;
+    -o-animation:      fadeIn 0.1s ease-in-out;
+    animation:         fadeIn 0.1s ease-in-out;
+}
+
+/*
+section.weather .options-wrapper ul li .bleeding-text {
+    opacity: 0;
+    position: absolute;
+    top: 400px;
+    color: white;
+    width: 341px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.3em;
+    margin-left: -50.5px;
+    -webkit-animation: hide 0.1ms ease-in-out; 
+    -moz-animation:    hide 0.1ms ease-in-out;
+    -o-animation:      hide 0.1s ease-in-out;
+    animation:         hide 0.1s ease-in-out;
+}*/
+
+section.weather .options-wrapper ul li.highlight .bleeding-text {
+    opacity: 1;
+    -webkit-animation: show 0.1ms ease-in-out; 
+    -moz-animation:    show 0.1ms ease-in-out;
+    -o-animation:      show 0.1s ease-in-out;
+    animation:         show 0.1s ease-in-out;
+}
+
+/* Carousel with text overlay */
+
+/*
+section.weather .text-overlay-wrapper {
+    clear: both;
+    position: absolute;
+    bottom: 120px;
+    height: 120px;
+    width: 100%;
+}
+
+    section.weather .text-overlay-wrapper .carousel-wrapper {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    section.weather .text-overlay-wrapper ul li {
+        width: 341px;
+        opacity: 0;
+        text-align: center;
+        -webkit-animation: hide 0.1ms ease-in-out; 
+        -moz-animation:    hide 0.1ms ease-in-out;
+        -o-animation:      hide 0.1s ease-in-out;
+        animation:         hide 0.1s ease-in-out;
+    }
+    
+    section.weather .text-overlay-wrapper ul li.first {
+        opacity: 1;
+        -webkit-animation: show 0.1ms ease-in-out; 
+        -moz-animation:    show 0.1ms ease-in-out;
+        -o-animation:      show 0.1s ease-in-out;
+        animation:         show 0.1s ease-in-out;      
+    }
+    
+    section.weather .text-overlay-wrapper ul li .text {
+        width: 580px;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 1.3em;
+    }
+*/
+
+section.weather .text-overlay-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 500px;
+    height: 70px;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0;
+    z-index: 2;
+}
+
+section.weather .text-overlay-wrapper .title, section.weather .text-overlay-wrapper p {
+    line-height: 1.3em;
+}
+
+section.weather.allow-fixed .text-overlay-wrapper {
+    position: fixed;
+    top: auto;
+    bottom: 135px;
+    opacity: 1;
+    -webkit-animation: show 0.2s ease-in-out; 
+    -moz-animation:    show 0.2s ease-in-out;
+    -o-animation:      show 0.2s ease-in-out;
+    animation:         show 0.2s ease-in-out;
+}
+
+    section.weather .text-overlay-wrapper ul {
+        width: 500px;
+        margin: 0 auto;
+        position: relative;
+        height: 72px;
+        overflow: hidden;
+    }
+    
+    section.weather .text-overlay-wrapper ul li {
+        position: relative;
+    }
+    
+
+section.weather .select-arrows-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    /*bottom: 158px; */
+    top: 500px;
+    opacity: 0;
+    z-index: 2;
+}
+
+section.weather.allow-fixed .select-arrows-wrapper {
+    position: fixed;
+    top: auto;
+    bottom: 135px;
+    opacity: 1;
+    -webkit-animation: show 0.2s ease-in-out; 
+    -moz-animation:    show 0.2s ease-in-out;
+    -o-animation:      show 0.2s ease-in-out;
+    animation:         show 0.2s ease-in-out;
+}
+
+section.weather .select-arrows-wrapper .inner {
+    margin: 0 auto;
+    width: 1000px;
+    height: 70px;
+}
+
+section.weather .select-arrows-wrapper .select-arrows {
+    top: 0;
+}
+
+section.weather .gradient-bottom {
+    bottom: 0;
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    background: -webkit-linear-gradient(transparent, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(transparent, black); /* Standard syntax (must be last) */
+    opacity: 0.6;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+
+section.weather .continue-wrapper {
+    opacity: 0;
+}
+
+section.weather.allow-fixed .continue-wrapper {
+    position: fixed;
+    
+    background: -webkit-linear-gradient(transparent, black); 
+    background: -o-linear-gradient(transparent, black);
+    background: -moz-linear-gradient(transparent, black); 
+    background: linear-gradient(transparent, black);
+    
+    opacity: 1;
+    -webkit-animation: show 0.2s ease-in-out; 
+    -moz-animation:    show 0.2s ease-in-out;
+    -o-animation:      show 0.2s ease-in-out;
+    animation:         show 0.2s ease-in-out;
+    
+    z-index: 2;
+    
+}
+
+
+/*-------------------------------------
+    Section - Final
+-----------------*/
+
+section.final {
+    background-color: #60002c;
+    
+    background: -webkit-linear-gradient(#000000, #60002c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000000, #60002c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000000, #60002c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000000, #60002c); /* Standard syntax */
+    background-attachment: fixed;
+    
+}
+
+section.final .main-heading-wrapper {
+    width: 100%;
+    height: 175px;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+section.final .generated-road-trip-wrapper {
+    width: 680px;
+    margin: 10px auto 100px;
+    overflow: auto;
+}
+
+section.final .generated-road-trip-wrapper .road-trip-name {
+    margin-bottom: 30px;
+}
+
+section.final .generated-road-trip-wrapper .icon {
+    width: 120px;
+    margin: 0 auto 30px;
+}
+
+section.final .generated-road-trip-wrapper .icon-large {
+    float: left;
+    margin-right: 77px;
+    width: 175px;
+    text-align: center;
+}
+
+section.final .generated-road-trip-wrapper .icon-large.last {
+    margin-right: 0;
+}
+
+section.final .generated-road-trip-wrapper .icon-large h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+section.final .generated-road-trip-wrapper .icon-large p {
+    font-size: 18px;
+}
+
+.share-wrapper {
+    
+    width: 100%;
+    height: 67px;
+    margin-bottom: 25px;
+    
+    background-color: #a00049;
+    
+    background: -webkit-linear-gradient(#fe5996, #a00049); 
+    background: -o-linear-gradient(#fe5996, #a00049); 
+    background: -moz-linear-gradient(#fe5996, #a00049); 
+    background: linear-gradient(#fe5996, #a00049);
+    
+    box-shadow: 0px 15px 25px #490021, 0px 0px 0px #60002c;
+    
+}
+
+.share-wrapper .inner {
+    width: 1000px;
+    margin: 0 auto;
+}
+    
+    .share-wrapper .label, .share-wrapper .field-email, .share-wrapper .button-share  {
+        display: block;
+        float: left;
+        height: 68px;
+        line-height: 68px;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    
+    .share-wrapper .button-share {
+        width: 575px;
+        margin: 0 auto;
+        float: none;
+    }
+    
+     .share-wrapper .button-share a {
+        color: white;
+        text-decoration: none;
+     }
+    
+    .share-wrapper .field-email {
+        width: 320px;
+        height: 30px;
+        line-height: 30px;
+        border-style: none;
+        border-radius: 6px;
+        padding: 7px 10px 3px;
+        margin-top: 14px;
+        margin-bottom: 14px;
+        color: gray;
+    }
+    
+section.final .terms-text-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+section.final .terms-text-wrapper p  {
+    width: 100%;
+    font-size: 14px;
+    text-align: justify;
+}
+    
+
+/*---------------- 
+ Arrows
+------------------*/
+
+a.previous { left: 0; background-image: url('../img/arrow-prev.png'); }
+a.next { right: 0; background-image: url('../img/arrow-next.png'); }
+a.continue { background-image: url('../img/arrow-cont.png'); }
+
+/*--------------
+    Generic styles
+-----------*/
+
+.clear {
+    clear: both;
+}
+
+.pink, .fnt-col-pink { color: #ed008c; }
+.white, .fnt-col-white { color: white; }
+.fnt-col-dark-red { color: #510026; }
+.uppercase, .fnt-case-upper { text-transform: uppercase; }
+
+.terms-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.browsehappy {
+    display:block;
+    width:100%;
+    height:100px;
+    background-color:#f2dede;
+    margin: 0 0 10px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #333;
+    vertical-align:middle;
+}
+
+.browsehappy span {
+    vertical-align:middle;
+    margin:20px 20px 20px 20px;
+    background:url("https://cdn.rawgit.com/alrra/browser-logos/master/internet-explorer/internet-explorer_64x64.png") no-repeat;
+    height:64px;
+    width:64px;
+    display:inline-block;
+}
+
+/*--------------------------------------------------
+Desktops and laptops
+--------------------------------------------------*/
+
+@media only screen and (max-width : 1280px) {
+    
+    /*main {
+        width: 1280px;
+        height: 720px;
+    }*/
+    
+    /*section.home, section.cars {
+        background-size: 1280px 720px;
+    }*/
+    
+    section.weather.allow-fixed .options-wrapper {
+        position: fixed;
+        top: 70px;
+    }
+    
+    section.weather .options-wrapper > .inner {
+        width: 1136px;
+    }
+    
+    section.weather .options-wrapper ul.options li {
+        width: 227px;
+    }
+    
+}
+
+@media only screen and (min-width : 1680px) {
+        
+    section.home .main-text-wrapper {
+        top: 245px;
+        width: 100%;
+    }
+
+    section.home .main-text-wrapper p {
+        font-size: 43px;
+        width: 1480px;
+    }
+
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    
+    .main-left-gradient, .main-right-gradient {
+        display: none;    
+    }
+    
+    section.location.allow-fixed .options-wrapper {
+        position: relative;
+        top: 0;
+    }
+    
+    /*section.location .thumbnails-wrapper {
+        top: 500px;
+    }*/
+    
+}
+
+/*
+    Animations
+*/
+
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+  0%   { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+@keyframes fadeIn {
+  0%   { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeOut { 0%   { opacity: 1; } 100% { opacity: 0.8; } }
+@-moz-keyframes fadeOut { 0%   { opacity: 1; } 100% { opacity: 0.8; } }
+@-o-keyframes fadeOut { 0%   { opacity: 1; } 100% { opacity: 0.8; } }
+@keyframes fadeOut { 0%   { opacity: 1; } 100% { opacity: 0.8; } }
+
+@-webkit-keyframes fadeOutLocThumb { 0%   { opacity: 1; } 100% { opacity: 0.7; } }
+@-moz-keyframes fadeOutLocThumb { 0%   { opacity: 1; } 100% { opacity: 0.7; } }
+@-o-keyframes fadeOutLocThumb { 0%   { opacity: 1; } 100% { opacity: 0.7; } }
+@keyframes fadeOutLocThumb { 0%   { opacity: 1; } 100% { opacity: 0.7; } }
+
+@-webkit-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes show {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes hide {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes hide {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes hide {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes hide {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+

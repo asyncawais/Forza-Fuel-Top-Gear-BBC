@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "FuturaLTPro-XBoldCondObl";
+    src: url("../fonts/2B9376_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2B9376_0_0.woff") format("woff"), url("../fonts/2B9376_0_0.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DINWeb-CondBold";
+    src: url("../fonts/DINWeb-CondBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWeb-CondBold.woff") format("woff"), url("../fonts/DINWeb-CondBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DINWeb-CondMedium";
+    src: url("../fonts/DINWeb-CondMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWeb-CondMedium.woff") format("woff"), url("../fonts/DINWeb-CondMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DINWeb-CondRegular";
+    src: url("../fonts/DINWeb-Cond.eot?#iefix") format("embedded-opentype"), url("../fonts/DINWeb-Cond.woff") format("woff"), url("../fonts/DINWeb-Cond.ttf") format("truetype");
+}
+
+@media not all {
+    
+    @font-face {
+        font-family: "FuturaLTPro-XBoldCondOblWIN";
+        src: url("../fonts/2b937600.svg") format("svg");
+    }
+    @font-face {
+        font-family: "DINWeb-CondMediumWIN";
+        src: url("../fonts/dinwebcondmedium.svg") format("svg");
+    }
+    .ff-windows .forzafuel .ff-futura {
+        font-family: 'FuturaLTPro-XBoldCondOblWIN','FuturaLTPro-XBoldCondObl';
+    }
+    .ff-windows .forzafuel .ff-din {
+        font-family: 'DINWeb-CondMediumWIN','DINWeb-CondMedium';
+    }
+    
+}
+
+.ff-futura {
+    font-family: 'FuturaLTPro-XBoldCondObl';
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+.ff-din {
+    color: #fff;
+    font-family: DINWeb-CondMedium;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}

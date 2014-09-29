@@ -1,0 +1,183 @@
+h1 {
+font-size:86px;
+}
+
+h2 {
+font-size:35px;
+margin-bottom:35px;
+}
+
+p {
+color:#FFF;
+}
+
+a {
+text-decoration:none;
+}
+
+section {
+position:static;
+}
+
+nav .pointer {
+position:absolute;
+top:70px;
+left:120px;
+margin:0;
+}
+nav .title a {
+    color: black;
+}
+#screen-5 > .inner {
+margin-top:90px;
+}
+
+.sections-wrapper {
+max-width:1920px;
+min-width:1000px;
+height:auto;
+margin:0 auto;
+}
+
+.main-heading-wrapper {
+width:1000px;
+margin:0 auto;
+}
+
+#map {
+max-width:1238px;
+margin: 10px auto;
+}
+
+.logo-wrapper {
+position:relative;
+width:500px;
+margin:0 auto;
+}
+
+.logo-title {
+position:absolute;
+top:108px;
+right:0;
+}
+
+.intro {
+width:700px;
+text-align:center;
+margin:0 auto 60px;
+}
+
+.button-pink {
+background-color:#fe5996;
+background:linear-gradient(#fe5996,#a00049) repeat scroll 0 0 rgba(0,0,0,0);
+width:207px;
+height:50px;
+display:block;
+line-height:50px;
+text-align:center;
+color:#FFF;
+font-size:25px;
+margin:0 auto;
+}
+
+#videos-wrapper {
+width:1000px;
+height:777px;
+margin:0 auto 50px;
+}
+
+#videos-wrapper .main-video {
+width:960px;
+height:540px;
+margin-bottom:50px;
+}
+
+#videos-wrapper .main-video ul {
+    position: relative;
+}
+
+#videos-wrapper .main-video ul li {
+    width:960px;
+    height:540px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#video-0 {
+    display: block;    
+}
+
+#video-1, #video-2, #video-3, #video-4  {
+    display: none;    
+}
+
+#videos-wrapper .video-thumbnails ul li {
+width:233px;
+height:161px;
+float:left;
+margin-right:9px;
+}
+
+#videos-wrapper .video-thumbnails ul li.last {
+margin-right:0;
+}
+
+#videos-wrapper .video-thumbnails ul li a {
+width:233px;
+height:161px;
+display:block;
+}
+
+#videos-wrapper .video-thumbnails ul li.off a {
+cursor:default;
+}
+
+a.video-title {
+    color: white;
+    font-size: 13px;
+    line-height: 1.3em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.preorder-wrapper {
+width:100%;
+height:320px;
+background-image:url(../img/section-videos-btm-bg.jpg);
+background-position:center;
+margin-bottom:20px;
+}
+
+.preorder-wrapper > .inner {
+top:16px;
+width:806px;
+height:288px;
+background-image:url(../img/section-videos-btm-overlay.png);
+margin:0 auto;
+}
+
+.preorder-wrapper p {
+position:absolute;
+width:350px;
+left:510px;
+top:60px;
+font-size:13px;
+text-align:justify;
+}
+
+.button-preorder {
+left:510px;
+position:absolute;
+top:214px;
+width:167px;
+}
+
+.spacer.h50 {
+width:100%;
+height:50px;
+}
+
+#map img,#video-0 img {
+width:100%;
+}

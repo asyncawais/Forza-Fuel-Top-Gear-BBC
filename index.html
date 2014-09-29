@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Create your ultimate Road Trip - Forza Fuel - BBC Top Gear</title>
+    <meta property="og:url" content="http://www.topgear.com/forza" />
+    <meta property="og:title" content="Create your ultimate Road Trip | Forza Fuel | BBC Top Gear" />
+    <meta property="og:description" content="Visit www.topgear.com/forza now to create your own perfect Forza road trip! Share with your friends and you could win a perfect road trip of your own with a friend to Monaco!" />
+    <meta property="og:image" content="http://compass.xboxlive.com/assets/5d/ab/5dabf58b-a2bb-4901-bde5-0f49d168086f.jpg" />
+</head>
+
+<body ng-app="ForzaApp" ng-controller="mainController">
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '316300721875800',
+                xfbml: true,
+                version: 'v2.1'
+            });
+        };
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--[if lte IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <main full-height>
+        <header ng-cloak class="ng-cloak">
+            <nav ng-controller="navigationController">
+                <div class="inner">
+                    <div class="ff-logo">
+                        <a href="about.html">
+                            <img src="img/ff-logo.jpg" />
+                        </a>
+                    </div>
+                    <div class="user-progress">
+                        <div class="title"><a href="javascript:void(0)"><span class="ff-futura black">Ultimate Road Trip</a>
+                            </span>
+                        </div>
+                        <ul>
+                            <!--
+                                <li><a href="" ng-click="navigate(1)"></a></li>
+                            -->
+                            <li id="user-progress-2" ng-class="{ on: continueToScreenID > 1 }">
+                                <a href="" ng-click="navigate(2, (continueToScreenID < 2))"></a>
+                            </li>
+                            <li id="user-progress-3" ng-class="{ on: continueToScreenID > 2 }">
+                                <a href="" ng-click="navigate(3, (continueToScreenID < 3))"></a>
+                            </li>
+                            <li id="user-progress-4" ng-class="{ on: continueToScreenID > 3 }">
+                                <a href="" ng-click="navigate(4, (continueToScreenID < 4))"></a>
+                            </li>
+                            <li id="user-progress-5" class="last" ng-class="{ on: continueToScreenID > 4 }">
+                                <a href="" ng-click="navigate(5, (continueToScreenID < 5))"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ff-preorder">
+                        <a href="http://www.xbox.com/en-GB/games/forza-horizon-2">
+                            <img src="img/ff-preorder.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="pointer"></div>
+        </header>
+        <div class="main-left-gradient"></div>
+        <div class="main-right-gradient"></div>
+        <div class="sections-wrapper">
+            <section id="screen-1" class="home ng-cloak" full-height-corrected slide-up="showScreenID == 1" ng-cloak>
+                <div class="inner" full-height-corrected>
+                    <!--
+                    <div class="para" style="position: fixed; width: 100px; height: 100px; background-color: #ccc;"></div>
+                    -->
+                    <!--
+                    <div class="logo-mask" full-height-corrected><img src="img/logo-mask.png" /></div>
+                    -->
+                    <div class="mask" full-height-corrected></div>
+                    <div class="main-heading-wrapper">
+                        <h1 class="ff-futura"><span class="pink">Create your Ultimate</span><br><span class="white large">Road Trip</span></h1>
+                    </div>
+                    <div class="main-text-wrapper">
+                        <p class="ff-din">Always wanted to cruise along the Amalfi coast in a Lambo? Or drive the Alpine Road through Germany in an Aston? Start by clicking on your perfect location to build your dream drive and be in with a chance of winning an amazing European road trip.</p>
+                    </div>
+                    <div class="continue-wrapper"> <span class="label">Choose your location</span>
+                        <a href="javascript:void(0)" class="continue" ng-click="continue(2)"></a>
+                    </div>
+                </div>
+            </section>
+            <section id="screen-2" class="location ng-cloak" full-height-corrected push-screen slide-up="showScreenID == 2" ng-cloak>
+                <div class="inner" full-height-corrected>
+                    <div class="main-heading-wrapper">
+                        <h1 class="ff-futura"><span class="small pink">PICK YOUR ULTIMATE</span><br><span class="large white">LOCATION</span></h1>
+                    </div>
+                    <div class="screen-wrapper" ng-controller="carouselController" ng-attr-carousel-obj="{{ 1 }}">
+                        <div class="options-wrapper" ng-swipe-left="carousel.showPrev(locations, 'location')" ng-swipe-right="carousel.showNext(locations, 'location')">
+                            <div class="mask" full-height-corrected></div>
+                            <div class="inner">
+                                <ul class="options" animate-carousel="carousel.index">
+                                    <li class="option" ng-repeat="location in locations track by $index" apply-carousel-fix>
+                                        <h2></h2>
+                                        <img src="{{ location.mainImage }}" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end of options-wrapper -->
+                        <div class="thumbnails-wrapper">
+                            <div class="pointer"></div>
+                            <div class="carousel-wrapper">
+                                <ul class="thumbnails" animate-carousel="carousel.index" reposition-thumbnails="2">
+                                    <li class="thumbnail" ng-repeat="location in locations track by $index">
+                                        <a href="" ng-click="carousel.navigate($index, locations.length)">
+                                            <img src="{{ location.thumbnail }}" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end of .thumbnails-wrapper -->
+                        <div class="text-overlay-wrapper first">
+                            <ul class="thumbnails" fading-carousel="carousel.index">
+                                <li class="option" ng-repeat="location in locations track by $index">
+                                    <div class="text"> <span class="title pink">{{ location.name }}</span>
+                                        <br>
+                                        <p> <span class="fnt-col-white">{{ location.description }}</span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-overlay-wrapper second">
+                            <ul class="thumbnails" fading-carousel="carousel.index">
+                                <li class="option" ng-repeat="location in locations track by $index">
+                                    <div class="text"> <span class="title pink">{{ location.name }} Selected</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="select-arrows-wrapper" carousel-navigate="carousel.animateOnClick">
+                            <div class="inner">
+                                <a href="javascript:void(0)" ng-click="carousel.showPrev(locations, 'location')" class="select-arrows previous"></a>
+                                <a href="javascript:void(0)" ng-click="carousel.showNext(locations, 'location')" class="select-arrows next"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="continue-wrapper"> <span class="label">Now choose your wheels</span>
+                        <a href="javascript:void(0)" class="continue" ng-click="continue(3)"></a>
+                    </div>
+                </div>
+            </section>
+            <section id="screen-3" class="cars ng-cloak" full-height-corrected push-screen slide-up="showScreenID == 3" ng-cloak>
+                <div class="inner" full-height-corrected>
+                    <div class="main-heading-wrapper">
+                        <h1 class="ff-futura"><span class="small pink">CHOOSE YOUR</span><br><span class="large white">RIDE</span></h1>
+                    </div>
+                    <div class="screen-wrapper" ng-controller="carouselController">
+                        <div class="options-wrapper">
+                            <div class="inner">
+                                <ul class="options" animate-carousel="carousel.index">
+                                    <li class="option" ng-repeat="car in cars">
+                                        <h2 class="ff-futura">{{ car.make }} {{ car.model }}</h2>
+                                        <img src="{{ car.mainImage }}" />
+                                        <div class="specifcations-wrapper">
+                                            <table class="specifications">
+                                                <tr>
+                                                    <td class="label ff-din">Top Speed</td>
+                                                    <td class="detail ff-din">{{ car.specs.topSpeed }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="label ff-din">BHP</td>
+                                                    <td class="detail ff-din">{{ car.specs.bhp }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="label ff-din">0-60 (MPH)</td>
+                                                    <td class="detail ff-din">{{ car.specs.acceleration }}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="select-arrows-wrapper" carousel-navigate="carousel.animateOnClick">
+                                    <a href="" ng-click="carousel.showPrev(cars, 'car')" class="select-arrows previous"></a>
+                                    <a href="" ng-click="carousel.showNext(cars, 'car')" class="select-arrows next"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of options-wrapper -->
+                        <div class="thumbnails-wrapper">
+                            <div class="pointer"></div>
+                            <div class="carousel-wrapper">
+                                <ul class="thumbnails" animate-carousel="carousel.index" reposition-thumbnails="2">
+                                    <li class="thumbnail" ng-repeat="car in cars track by $index">
+                                        <a href="" ng-click="carousel.navigate($index, cars.length)">
+                                            <img src="{{ car.thumbnail }}" />
+                                            <!--
+                                            <span class="bleeding-text" style="position: absolute;">Some very long long long long long text</span>
+                                            -->
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-overlay-wrapper">
+                            <ul class="thumbnails" fading-carousel="carousel.index">
+                                <li class="option" ng-repeat="car in cars track by $index">
+                                    <div class="text"> <span class="title pink">{{ car.make }} {{ car.model }} Selected</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="continue-wrapper"> <span class="label">Now choose your weather</span>
+                        <a href="javascript:void(0)" class="continue" ng-click="continue(4)"></a>
+                    </div>
+                </div>
+                <!-- end of .inner -->
+            </section>
+            <section id="screen-4" class="weather ng-cloak" full-height-corrected push-screen slide-up="showScreenID == 4" ng-cloak>
+                <div class="inner" full-height-corrected>
+                    <div class="main-heading-wrapper">
+                        <h1 class="ff-futura"><span class="small pink">Control your</span><br><span class="large black">conditions</span></h1>
+                    </div>
+                    <div class="screen-wrapper" ng-controller="carouselController">
+                        <div class="options-wrapper">
+                            <div class="mask" full-height-corrected></div>
+                            <div class="inner">
+                                <ul class="options" animate-carousel="carousel.index" reposition-thumbnails="2">
+                                    <li class="option" ng-repeat="condition in weather track by $index">
+                                        <h2></h2>
+                                        <img src="{{ condition.mainImage }}" />
+                                        <!--<div class="bleeding-text">
+                                            <span class="title pink">{{ condition.title }}</span>
+                                            <p>{{ condition.description }}</p>
+                                        </div>-->
+                                    </li>
+                                </ul>
+                                <div class="gradient-bottom"></div>
+                            </div>
+                        </div>
+                        <!-- end of options-wrapper -->
+                        <div class="text-overlay-wrapper">
+                            <ul fading-carousel="carousel.index">
+                                <li ng-repeat="condition in weather track by $index">
+                                    <div class="text"> <span class="title pink">{{ condition.title }} Selected</span>
+                                        <p><span class="white">{{ condition.description }}</span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="select-arrows-wrapper">
+                            <div class="inner">
+                                <a href="javascript:void(0)" ng-click="carousel.showPrev(weather, 'weather')" class="select-arrows previous"></a>
+                                <a href="javascript:void(0)" ng-click="carousel.showNext(weather, 'weather')" class="select-arrows next"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="continue-wrapper"> <span class="label">Complete your ultimate road trip</span>
+                        <a href="javascript:void(0)" class="continue" ng-click="continue(5)"></a>
+                    </div>
+                </div>
+            </section>
+            <section id="screen-5" class="final ng-cloak" full-height-corrected push-screen slide-up="showScreenID == 5" ng-cloak>
+                <div class="inner" viewport-height>
+                    <div class="main-heading-wrapper">
+                        <h1 class="ff-futura"><span class="small pink">YOUR ULTIMATE</span><br><span class="large white">ROAD TRIP</span></h1>
+                    </div>
+                    <div class="generated-road-trip-wrapper">
+                        <h2 class="road-trip-name fnt-col-white ff-din">'{{ locations[userSelections.locationID].roadTripName }}'</h2>
+                        <div class="icon-large icon-location">
+                            <div class="icon">
+                                <img src="img/icon-large-location.png" />
+                            </div>
+                            <h3 class="heading fnt-col-white fnt-case-upper">Location</h3>
+                            <p class="title fnt-col-white">{{ locations[userSelections.locationID].name }}</p>
+                        </div>
+                        <div class="icon-large icon-location">
+                            <div class="icon">
+                                <img src="img/icon-large-car.png" />
+                            </div>
+                            <h3 class="heading fnt-col-white fnt-case-upper">Car</h3>
+                            <p class="title fnt-col-white">{{ cars[userSelections.carID].make }} {{ cars[userSelections.carID].model }}</p>
+                        </div>
+                        <div class="icon-large icon-location last">
+                            <div class="icon">
+                                <img src="img/icon-large-weather.png" />
+                            </div>
+                            <h3 class="heading fnt-col-white fnt-case-upper">Conditions</h3>
+                            <p class="title fnt-col-white">{{ weather[userSelections.weatherID].title }}</p>
+                        </div>
+                    </div>
+                    <div class="share-wrapper clear">
+                        <div class="inner">
+                            <!--
+                            <label class="label fnt-col-white fnt-case-upper ff-din" for="email">Enter your email</label>
+                    
+                            <input type="text" class="field-email ff-din" name="email" />
+                            -->
+                            <div class="button-share fnt-col-white fnt-case-upper ff-din"><a href="" ng-click="fbShare(locations[userSelections.locationID].roadTripName)">+ Share on FaceBook <span class="fnt-col-dark-red">Click Here</span></a><a href="competition.html">&nbsp; &nbsp; Enter Competition <span class="fnt-col-dark-red">Click Here</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms-text-wrapper clear">
+                        <p class="terms-text fnt-col-white">Promoter: Immediate Media Company London Limited. This competition is open till 23:59 on 30/10/2014. By submitting your entry you confirm that you have read, understood and accept the Terms and Conditions of this competition. <a href="terms-and-conditions/" class="terms-link" target="_blank">Click here</a> to see the full Terms & Conditions.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/forza-app/app.js"></script>
+    <script src="js/forza-app/controllers/mainController.js"></script>
+    <script src="js/forza-app/controllers/navigationController.js"></script>
+    <script src="js/forza-app/controllers/carouselController.js"></script>
+    <!--
+    <script>
+        jQuery(window).scroll(function(){
+            jQuery('.para').css('top', (-window.pageYOffset/4) + 'px')     
+        });
+    </script>
+    -->
+</body>
+
+</html>
