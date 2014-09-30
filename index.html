@@ -49,9 +49,6 @@
                             </span>
                         </div>
                         <ul>
-                            <!--
-                                <li><a href="" ng-click="navigate(1)"></a></li>
-                            -->
                             <li id="user-progress-2" ng-class="{ on: continueToScreenID > 1 }">
                                 <a href="" ng-click="navigate(2, (continueToScreenID < 2))"></a>
                             </li>
@@ -80,12 +77,6 @@
         <div class="sections-wrapper">
             <section id="screen-1" class="home ng-cloak" full-height-corrected slide-up="showScreenID == 1" ng-cloak>
                 <div class="inner" full-height-corrected>
-                    <!--
-                    <div class="para" style="position: fixed; width: 100px; height: 100px; background-color: #ccc;"></div>
-                    -->
-                    <!--
-                    <div class="logo-mask" full-height-corrected><img src="img/logo-mask.png" /></div>
-                    -->
                     <div class="mask" full-height-corrected></div>
                     <div class="main-heading-wrapper">
                         <h1 class="ff-futura"><span class="pink">Create your Ultimate</span><br><span class="white large">Road Trip</span></h1>
@@ -115,7 +106,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- end of options-wrapper -->
                         <div class="thumbnails-wrapper">
                             <div class="pointer"></div>
                             <div class="carousel-wrapper">
@@ -128,7 +118,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- end of .thumbnails-wrapper -->
                         <div class="text-overlay-wrapper first">
                             <ul class="thumbnails" fading-carousel="carousel.index">
                                 <li class="option" ng-repeat="location in locations track by $index">
@@ -204,9 +193,6 @@
                                     <li class="thumbnail" ng-repeat="car in cars track by $index">
                                         <a href="" ng-click="carousel.navigate($index, cars.length)">
                                             <img src="{{ car.thumbnail }}" />
-                                            <!--
-                                            <span class="bleeding-text" style="position: absolute;">Some very long long long long long text</span>
-                                            -->
                                         </a>
                                     </li>
                                 </ul>
@@ -240,10 +226,6 @@
                                     <li class="option" ng-repeat="condition in weather track by $index">
                                         <h2></h2>
                                         <img src="{{ condition.mainImage }}" />
-                                        <!--<div class="bleeding-text">
-                                            <span class="title pink">{{ condition.title }}</span>
-                                            <p>{{ condition.description }}</p>
-                                        </div>-->
                                     </li>
                                 </ul>
                                 <div class="gradient-bottom"></div>
@@ -303,11 +285,6 @@
                     </div>
                     <div class="share-wrapper clear">
                         <div class="inner">
-                            <!--
-                            <label class="label fnt-col-white fnt-case-upper ff-din" for="email">Enter your email</label>
-                    
-                            <input type="text" class="field-email ff-din" name="email" />
-                            -->
                             <div class="button-share fnt-col-white fnt-case-upper ff-din"><a href="" ng-click="fbShare(locations[userSelections.locationID].roadTripName)">+ Share on FaceBook <span class="fnt-col-dark-red">Click Here</span></a><a href="competition.html">&nbsp; &nbsp; Enter Competition <span class="fnt-col-dark-red">Click Here</span></a>
                             </div>
                         </div>
@@ -325,13 +302,6 @@
     <script src="js/forza-app/controllers/mainController.js"></script>
     <script src="js/forza-app/controllers/navigationController.js"></script>
     <script src="js/forza-app/controllers/carouselController.js"></script>
-    <!--
-    <script>
-        jQuery(window).scroll(function(){
-            jQuery('.para').css('top', (-window.pageYOffset/4) + 'px')     
-        });
-    </script>
-    -->
 </body>
 
 </html>
